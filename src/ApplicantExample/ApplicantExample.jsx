@@ -79,7 +79,7 @@ const Example = () => {
     const currentDocuments = documents[currentApplicantName] || [];
 
     return (
-        <div className="h-full w-screen">
+        <div className="h-full w-full">
             <div className="h-16 border w-full bg-gray-50 flex justify-between items-center px-10">
                 <h1 className="text-2xl font-bold">Document Upload</h1>
                 <button
@@ -180,7 +180,7 @@ const Example = () => {
                                 {currentDocuments.map((doc, index) => (
                                     <li
                                         key={index}
-                                        className="flex justify-between items-center mb-2 p-2 border rounded"
+                                        className="flex justify-between items-center flex-wrap mb-2 p-2 border rounded"
                                     >
                                         <span className='flex justify-between gap-4 items-center'>
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
